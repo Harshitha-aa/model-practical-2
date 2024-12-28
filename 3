@@ -1,0 +1,36 @@
+#include<stdio.h>
+struct std{
+        int m1,m2,m3,m4,m5,total;
+        float avg;
+    }s;
+int total(struct std s)
+{
+    s.total=s.m1+s.m2+s.m3+s.m4+s.m5;
+    return s.total;
+}
+int main()
+{
+    scanf("%d %d %d %d %d",&s.m1,&s.m2,&s.m3,&s.m4,&s.m5);
+    int c=total(s);
+    printf("%d\n",c);
+    s.avg=c/5;
+    printf("%.2f\n",s.avg);
+    if(s.avg>=90 && s.avg<=100)
+    printf("grade:'O'");
+    
+    else if(s.avg>=80 && s.avg<=89)
+    printf("grade:'A'");
+    
+    else if(s.avg>=70 && s.avg<=79)
+    printf("grade:'B'");
+    
+    else if(s.avg>=60 && s.avg<=69)
+    printf("grade:'C'");
+    
+    else if(s.avg>=50 && s.avg<=59)
+    printf("grade:'D'");
+    
+    else if(s.avg<50)
+    printf("FAIL");
+    return 0;
+}
