@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    struct student
+    {
+           unsigned int m1:7,m2:7,m3:7,total;
+           float avg;
+    }s;
+    int t,k,p;
+    t=s.m1;
+    k=s.m2;
+    p=s.m3;
+    scanf("%d",&t);
+    scanf("%d",&k);
+    scanf("%d",&p);
+    s.total=t+k+p;
+    s.avg=s.total/3;
+    printf("%d %d %d",t,k,p);
+    printf("\n%d %.2f",s.total,s.avg);
+    return 0;
+}
+    
